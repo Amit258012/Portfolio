@@ -2,9 +2,9 @@ import "./experience.css";
 
 function Experience() {
     return (
-        <div>
+        <section id="experience">
             <h5>Experience</h5>
-        </div>
+        </section>
     );
 }
 

@@ -2,9 +2,9 @@ import "./Testimonials";
 
 function Testimonials() {
     return (
-        <div>
+        <section id="testimonials">
             <h5>Testimonial</h5>
-        </div>
+        </section>
     );
 }
 

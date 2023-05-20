@@ -2,9 +2,9 @@ import "./portfolio.css";
 
 function Portfolio() {
     return (
-        <div>
+        <section id="portfolio">
             <h5>Portfolio</h5>
-        </div>
+        </section>
     );
 }
 
