@@ -1,13 +1,25 @@
 import "./App.css";
-import { HiHome } from "react-icons/hi";
+import Header from "./Components/header/Header";
+import Nav from "./Components/nav/Nav";
+import About from "./Components/about/About";
+import Experience from "./Components/experience/Experience";
+import Portfolio from "./Components/portfolio/Portfolio";
+import Testimonials from "./Components/testimonials/Testimonials";
+import Contact from "./Components/contact/Contact";
+import Footer from "./Components/footer/Footer";
 
 function App() {
     return (
         <>
             <h1>App</h1>
-            <a href="#">
-                <HiHome />
-            </a>
+            <Header />
+            <Nav />
+            <About />
+            <Experience />
+            <Portfolio />
+            <Testimonials />
+            <Contact />
+            <Footer />
         </>
     );
 }
