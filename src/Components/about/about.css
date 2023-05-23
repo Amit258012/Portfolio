@@ -100,13 +100,14 @@
   }
   .about__content {
     text-align: center;
+    margin: 0.75rem;
   }
   .about__card {
     padding: 1.3rem;
   }
 
   .para {
-    margin: 1.5rem 0;
+    margin: 1.5rem 1rem;
     font-size: 0.65rem;
   }
 }

@@ -20,7 +20,7 @@ function About() {
             <article className="about__card">
               <FaAward className="about__icon" />
               <h5>Experience</h5>
-              <small>3+ months as Intern</small>
+              <small>Worked as Frontend Intern</small>
             </article>
             <article className="about__card">
               <SiUdemy className="about__icon" />
