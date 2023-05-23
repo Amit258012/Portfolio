@@ -70,7 +70,15 @@ section > h2,
 section > h5 {
   text-align: center;
   color: var(--color-light);
+}
+
+section > h2 {
   margin-bottom: 3rem;
+  color: var(--color-primary);
+}
+
+section > h5 {
+  margin-top: 4rem;
 }
 
 .text-light {
