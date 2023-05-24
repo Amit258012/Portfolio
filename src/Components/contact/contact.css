@@ -60,12 +60,12 @@ textarea {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
+}
 
-  /* =======Media queries (Small Devices)======== */
+/* =======Media queries (Small Devices)======== */
 
-  @media screen and (max-width: 600px) {
-    .contact__container {
-      width: var(--container-width-sm);
-    }
+@media screen and (max-width: 600px) {
+  .contact__container {
+    width: var(--container-width-sm);
   }
 }

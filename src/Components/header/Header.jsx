@@ -9,7 +9,7 @@ function Header() {
     <header>
       <div className="container header__container">
         <h5>Hello I'm</h5>
-        <h1>Amit Jahagirdar</h1>
+        <h1 className="amit">Amit Jahagirdar</h1>
         <h5 className="text-light">Web Developer</h5>
         <CTA />
         <HeaderSocial />
