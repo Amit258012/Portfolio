@@ -26,7 +26,7 @@ header {
   gap: 0.8rem;
   position: absolute;
   left: 0;
-  bottom: 3rem;
+  bottom: 10rem;
 }
 
 .header__socials::after {
@@ -40,12 +40,12 @@ header {
 .me {
   /* background: var(--color-primary); */
   background: linear-gradient(var(--color-primary), transparent);
-  width: 15rem;
-  height: 25rem;
+  width: 20rem;
+  height: 30rem;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 4rem;
+  margin-top: 10rem;
   border-radius: 12rem 12rem 0 0;
   overflow: hidden;
   padding: 5rem 1.5rem 1.5rem 1.5rem;
@@ -55,7 +55,7 @@ header {
 .scroll_down {
   position: absolute;
   right: -2.3rem;
-  bottom: 5rem;
+  bottom: 15rem;
   transform: rotate(90deg);
   font-weight: 300;
   font-size: 0.9rem;
@@ -66,6 +66,17 @@ header {
 @media screen and (max-width: 1024px) {
   header {
     height: 68vh;
+  }
+  .me {
+    width: 15rem;
+    height: 25rem;
+    margin-top: 4rem;
+  }
+  .scroll_down {
+    bottom: 5rem;
+  }
+  .header__socials {
+    bottom: 3rem;
   }
 }
 
