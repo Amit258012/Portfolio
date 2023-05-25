@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import "./header.css";
 import Me from "../../assets/me.png";
 import CTA from "./CTA";

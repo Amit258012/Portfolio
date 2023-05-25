@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import "./about.css";
 import ME from "../../assets/me-about.jpg";
 import { FaAward } from "react-icons/fa";
