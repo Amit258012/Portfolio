@@ -1,9 +1,23 @@
 import "./experience.css";
 import { BsPatchCheckFill } from "react-icons/bs";
+import { useInView } from "react-intersection-observer";
 
-function Experience() {
+function Experience({ setActive }) {
+  const pageHeight = window.innerHeight;
+  const observerMargin = Math.floor(pageHeight / 2);
+  const { ref, inView } = useInView({
+    rootMargin: `-${
+      pageHeight % 2 === 0 ? observerMargin - 1 : observerMargin
+    }px 0px -${observerMargin}px 0px`,
+  });
+
+  if (inView) {
+    setActive("#experience");
+  }
+
   return (
-    <section id="experience">
+    <section id="experience" ref={ref}>
+      {console.log("exp", inView)}
       <h5>What Skills I Have</h5>
       <h2>MY Experience</h2>
 

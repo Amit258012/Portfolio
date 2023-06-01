@@ -7,15 +7,19 @@ import Portfolio from "./Components/portfolio/Portfolio";
 import Contact from "./Components/contact/Contact";
 import Footer from "./Components/footer/Footer";
 
+import { useState } from "react";
+
 function App() {
+  const [active, setActive] = useState(null);
+
   return (
     <>
-      <Header />
-      <Nav />
-      <About />
-      <Experience />
-      <Portfolio />
-      <Contact />
+      <Header setActive={setActive} />
+      <Nav active={active} />
+      <About setActive={setActive} />
+      <Experience setActive={setActive} />
+      <Portfolio setActive={setActive} />
+      <Contact setActive={setActive} />
       <Footer />
     </>
   );

@@ -4,8 +4,9 @@ import { RiMessengerLine } from "react-icons/ri";
 import { MdWhatsapp } from "react-icons/md";
 import { useRef } from "react";
 import emailjs from "emailjs-com";
+import { useInView } from "react-intersection-observer";
 
-function Contact() {
+function Contact({ setActive }) {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -30,8 +31,21 @@ function Contact() {
     e.target.reset();
   };
 
+  const pageHeight = window.innerHeight;
+  const observerMargin = Math.floor(pageHeight / 2);
+  const { ref, inView } = useInView({
+    rootMargin: `-${
+      pageHeight % 2 === 0 ? observerMargin - 1 : observerMargin
+    }px 0px -${observerMargin}px 0px`,
+  });
+
+  if (inView) {
+    setActive("#contact");
+  }
+
   return (
-    <section id="contact">
+    <section id="contact" ref={ref}>
+      {console.log("contact", inView)}
       <h5>Get In Touch</h5>
       <h2>Contact Me</h2>
 

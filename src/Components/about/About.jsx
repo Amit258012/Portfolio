@@ -3,10 +3,24 @@ import ME from "../../assets/me-about.jpg";
 import { FaAward } from "react-icons/fa";
 import { SiUdemy } from "react-icons/si";
 import { BiCodeAlt } from "react-icons/bi";
+import { useInView } from "react-intersection-observer";
 
-function About() {
+function About({ setActive }) {
+  const pageHeight = window.innerHeight;
+  const observerMargin = Math.floor(pageHeight / 2);
+  const { ref, inView } = useInView({
+    rootMargin: `-${
+      pageHeight % 2 === 0 ? observerMargin - 1 : observerMargin
+    }px 0px -${observerMargin}px 0px`,
+  });
+
+  if (inView) {
+    setActive("#about");
+  }
+
   return (
-    <section id="about" className="about">
+    <section id="about" className="about" ref={ref}>
+      {console.log("about", inView)}
       <h5>Get To Know</h5>
       <h2>About Me</h2>
       <div className="container about__container">
