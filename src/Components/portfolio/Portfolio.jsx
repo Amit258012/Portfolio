@@ -7,6 +7,7 @@ import IMG5 from "../../assets/portfolio5.png";
 import IMG6 from "../../assets/portfolio6.jpg";
 import IMG7 from "../../assets/portfolio7.jpg";
 import IMG8 from "../../assets/portfolio8.jpg";
+import { useInView } from "react-intersection-observer";
 
 // data
 const data = [
@@ -70,9 +71,22 @@ const data = [
 
 console.log(data);
 
-function Portfolio() {
+function Portfolio({ setActive }) {
+  const pageHeight = window.innerHeight;
+  const observerMargin = Math.floor(pageHeight / 2);
+  const { ref, inView } = useInView({
+    rootMargin: `-${
+      pageHeight % 2 === 0 ? observerMargin - 1 : observerMargin
+    }px 0px -${observerMargin}px 0px`,
+  });
+
+  if (inView) {
+    setActive("#portfolio");
+  }
+
   return (
-    <section id="portfolio">
+    <section id="portfolio" ref={ref}>
+      {console.log("portfolio", inView)}
       <h5>My Recent Projects</h5>
       <h2>Portfolio</h2>
 

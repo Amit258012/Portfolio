@@ -7,38 +7,59 @@ import { BiMessageDetail } from "react-icons/bi";
 
 import { useState } from "react";
 
-function Nav() {
-  const [activeNav, setActiveNav] = useState("#");
+function Nav({ active }) {
+  const [activeNav, setActiveNav] = useState(null);
+
   return (
     <nav>
       <a
         href="#"
-        onClick={() => setActiveNav("#")}
-        className={activeNav === "#" ? "active" : ""}>
+        onClick={() => {
+          setActiveNav("#");
+        }}
+        className={`nav-item ${
+          activeNav === "#" || active === "#" ? "nav-item--active" : ""
+        }`}>
         <AiOutlineHome />
       </a>
       <a
         href="#about"
         onClick={() => setActiveNav("#about")}
-        className={activeNav === "#about" ? "active" : ""}>
+        className={`nav-item ${
+          activeNav === "#about" || active === "#about"
+            ? "nav-item--active"
+            : ""
+        }`}>
         <AiOutlineUser />
       </a>
       <a
         href="#experience"
         onClick={() => setActiveNav("#experience")}
-        className={activeNav === "#experience" ? "active" : ""}>
+        className={`nav-item ${
+          activeNav === "#experience" || active === "#experience"
+            ? "nav-item--active"
+            : ""
+        }`}>
         <BiBookAlt />
       </a>
       <a
         href="#portfolio"
         onClick={() => setActiveNav("#portfolio")}
-        className={activeNav === "#portfolio" ? "active" : ""}>
+        className={`nav-item ${
+          activeNav === "#portfolio" || active === "#portfolio"
+            ? "nav-item--active"
+            : ""
+        }`}>
         <AiFillAppstore />
       </a>
       <a
         href="#contact"
         onClick={() => setActiveNav("#contact")}
-        className={activeNav === "#contact" ? "active" : ""}>
+        className={`nav-item ${
+          activeNav === "#contact" || active === "#contact"
+            ? "nav-item--active"
+            : ""
+        }`}>
         <BiMessageDetail />
       </a>
     </nav>
