@@ -18,10 +18,13 @@ function Experience({ setActive }) {
     setActive("#experience");
   }
   useEffect(() => {
-    return () => {
-      AOS.init({ duration: 500 });
-    };
+    AOS.init({ duration: 500 });
   }, []);
+  useEffect(() => {
+    if (AOS) {
+      AOS.refresh();
+    }
+  });
 
   return (
     <section id="experience" ref={ref}>

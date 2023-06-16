@@ -20,10 +20,13 @@ function Header({ setActive }) {
   }
 
   useEffect(() => {
-    return () => {
-      AOS.init({ duration: 700 });
-    };
+    AOS.init({ duration: 700 });
   }, []);
+  useEffect(() => {
+    if (AOS) {
+      AOS.refresh();
+    }
+  });
 
   return (
     <header ref={ref}>

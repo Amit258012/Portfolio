@@ -87,10 +87,13 @@ function Portfolio({ setActive }) {
     setActive("#portfolio");
   }
   useEffect(() => {
-    return () => {
-      AOS.init({ duration: 900 });
-    };
+    AOS.init({ duration: 900 });
   }, []);
+  useEffect(() => {
+    if (AOS) {
+      AOS.refresh();
+    }
+  });
 
   return (
     <section id="portfolio" ref={ref}>

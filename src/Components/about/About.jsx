@@ -22,10 +22,13 @@ function About({ setActive }) {
   }
 
   useEffect(() => {
-    return () => {
-      AOS.init({ duration: 500 });
-    };
+    AOS.init({ duration: 500 });
   }, []);
+  useEffect(() => {
+    if (AOS) {
+      AOS.refresh();
+    }
+  });
 
   return (
     <section id="about" className="about" ref={ref}>
