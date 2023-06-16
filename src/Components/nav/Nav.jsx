@@ -17,28 +17,20 @@ function Nav({ active }) {
         onClick={() => {
           setActiveNav("#");
         }}
-        className={`nav-item ${
-          activeNav === "#" || active === "#" ? "nav-item--active" : ""
-        }`}>
+        className={`nav-item ${active === "#" ? "nav-item--active" : ""}`}>
         <AiOutlineHome />
       </a>
       <a
         href="#about"
         onClick={() => setActiveNav("#about")}
-        className={`nav-item ${
-          activeNav === "#about" || active === "#about"
-            ? "nav-item--active"
-            : ""
-        }`}>
+        className={`nav-item ${active === "#about" ? "nav-item--active" : ""}`}>
         <AiOutlineUser />
       </a>
       <a
         href="#experience"
         onClick={() => setActiveNav("#experience")}
         className={`nav-item ${
-          activeNav === "#experience" || active === "#experience"
-            ? "nav-item--active"
-            : ""
+          active === "#experience" ? "nav-item--active" : ""
         }`}>
         <BiBookAlt />
       </a>
@@ -46,9 +38,7 @@ function Nav({ active }) {
         href="#portfolio"
         onClick={() => setActiveNav("#portfolio")}
         className={`nav-item ${
-          activeNav === "#portfolio" || active === "#portfolio"
-            ? "nav-item--active"
-            : ""
+          active === "#portfolio" ? "nav-item--active" : ""
         }`}>
         <AiFillAppstore />
       </a>
@@ -56,9 +46,7 @@ function Nav({ active }) {
         href="#contact"
         onClick={() => setActiveNav("#contact")}
         className={`nav-item ${
-          activeNav === "#contact" || active === "#contact"
-            ? "nav-item--active"
-            : ""
+          active === "#contact" ? "nav-item--active" : ""
         }`}>
         <BiMessageDetail />
       </a>

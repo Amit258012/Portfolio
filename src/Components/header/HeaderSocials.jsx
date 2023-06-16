@@ -8,16 +8,22 @@ function HeaderSocials() {
       <a
         href="https://www.linkedin.com/in/amit-jahagirdar-b3150320b/"
         target="_blank"
-        rel="noreferrer">
+        rel="noreferrer"
+        title="Linkedin">
         <ImLinkedin />
       </a>
-      <a href="https://github.com/Amit258012" target="_blank" rel="noreferrer">
+      <a
+        href="https://github.com/Amit258012"
+        target="_blank"
+        rel="noreferrer"
+        title="GitHub">
         <FaGithubSquare />
       </a>
       <a
         href="https://leetcode.com/Amit_Jahagirdar/"
         target="_blank"
-        rel="noreferrer">
+        rel="noreferrer"
+        title="Leetcode">
         <SiLeetcode />
       </a>
     </div>

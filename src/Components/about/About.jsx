@@ -33,7 +33,7 @@ function About({ setActive }) {
             <article className="about__card">
               <FaAward className="about__icon" />
               <h5>Experience</h5>
-              <small>Worked as Frontend Intern</small>
+              <small>Working as Intern</small>
             </article>
             <article className="about__card">
               <SiUdemy className="about__icon" />

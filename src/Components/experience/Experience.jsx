@@ -64,7 +64,7 @@ function Experience({ setActive }) {
               <BsPatchCheckFill className="experience__detail-icon" />
               <div>
                 <h4>REACT</h4>
-                <small className="text-light">Basics</small>
+                <small className="text-light">Intermediate</small>
               </div>
             </article>
           </div>
@@ -96,8 +96,8 @@ function Experience({ setActive }) {
             <article className="experience__details">
               <BsPatchCheckFill className="experience__detail-icon" />
               <div>
-                <h4>C#</h4>
-                <small className="text-light">Basics</small>
+                <h4>Supabase</h4>
+                <small className="text-light">Intermediate</small>
               </div>
             </article>
             <article className="experience__details">
