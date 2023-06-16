@@ -45,7 +45,6 @@ function Contact({ setActive }) {
 
   return (
     <section id="contact" ref={ref}>
-      {console.log("contact", inView)}
       <h5>Get In Touch</h5>
       <h2>Contact Me</h2>
 

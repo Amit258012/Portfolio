@@ -3,6 +3,9 @@ import Me from "../../assets/me.png";
 import CTA from "./CTA";
 import HeaderSocial from "./HeaderSocials";
 import { useInView } from "react-intersection-observer";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function Header({ setActive }) {
   const pageHeight = window.innerHeight;
@@ -15,18 +18,27 @@ function Header({ setActive }) {
   if (inView) {
     setActive("#");
   }
+
+  useEffect(() => {
+    return () => {
+      AOS.init({ duration: 700 });
+    };
+  }, []);
+
   return (
     <header ref={ref}>
       {/* {console.log("about", inView)} */}
       <div className="container header__container">
         <h5>Hello I'm</h5>
-        <h1 className="amit">Amit Jahagirdar</h1>
+        <h1 className="amit" data-aos="zoom-in">
+          Amit Jahagirdar
+        </h1>
         <h5 className="text-light">Web Developer</h5>
         <CTA />
         <HeaderSocial />
 
         <div className="me">
-          <img src={Me} alt="Amit Jahagiradr" />
+          <img src={Me} alt="Amit Jahagiradr" data-aos="fade-up" />
         </div>
         <a href="#contact" className="scroll_down">
           Scroll Down

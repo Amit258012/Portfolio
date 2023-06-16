@@ -7,7 +7,7 @@ import Portfolio from "./Components/portfolio/Portfolio";
 import Contact from "./Components/contact/Contact";
 import Footer from "./Components/footer/Footer";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
   const [active, setActive] = useState(null);

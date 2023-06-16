@@ -9,6 +9,10 @@ import IMG7 from "../../assets/portfolio7.jpg";
 import IMG8 from "../../assets/portfolio8.jpg";
 import { useInView } from "react-intersection-observer";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 // data
 const data = [
   {
@@ -70,8 +74,6 @@ const data = [
   },
 ];
 
-console.log(data);
-
 function Portfolio({ setActive }) {
   const pageHeight = window.innerHeight;
   const observerMargin = Math.floor(pageHeight / 2);
@@ -84,6 +86,11 @@ function Portfolio({ setActive }) {
   if (inView) {
     setActive("#portfolio");
   }
+  useEffect(() => {
+    return () => {
+      AOS.init({ duration: 900 });
+    };
+  }, []);
 
   return (
     <section id="portfolio" ref={ref}>
@@ -94,7 +101,10 @@ function Portfolio({ setActive }) {
       <div className="container portfolio__container">
         {data.map(({ id, image, title, githubLink, liveDemo }) => {
           return (
-            <article key={id} className="portfolio__item">
+            <article
+              key={id}
+              className="portfolio__item"
+              data-aos="zoom-in-down">
               <div className="portfolio__item-image">
                 <img src={image} alt={title} />
               </div>

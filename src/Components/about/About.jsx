@@ -4,6 +4,9 @@ import { FaAward } from "react-icons/fa";
 import { SiUdemy } from "react-icons/si";
 import { BiCodeAlt } from "react-icons/bi";
 import { useInView } from "react-intersection-observer";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function About({ setActive }) {
   const pageHeight = window.innerHeight;
@@ -18,6 +21,12 @@ function About({ setActive }) {
     setActive("#about");
   }
 
+  useEffect(() => {
+    return () => {
+      AOS.init({ duration: 500 });
+    };
+  }, []);
+
   return (
     <section id="about" className="about" ref={ref}>
       {console.log("about", inView)}
@@ -30,17 +39,26 @@ function About({ setActive }) {
 
         <div className="about__content">
           <div className="about__cards">
-            <article className="about__card">
+            <article
+              className="about__card"
+              data-aos="fade-right"
+              data-aos-duration="400">
               <FaAward className="about__icon" />
               <h5>Experience</h5>
               <small>Working as Intern</small>
             </article>
-            <article className="about__card">
+            <article
+              className="about__card"
+              data-aos="fade-right"
+              data-aos-duration="800">
               <SiUdemy className="about__icon" />
               <h5>Courses</h5>
               <small>3+ Courses completed</small>
             </article>
-            <article className="about__card">
+            <article
+              className="about__card"
+              data-aos="fade-right"
+              data-aos-duration="1000">
               <BiCodeAlt className="about__icon" />
               <h5>Projects</h5>
               <small>10+ Projects Completed</small>

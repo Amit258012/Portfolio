@@ -1,6 +1,9 @@
 import "./experience.css";
 import { BsPatchCheckFill } from "react-icons/bs";
 import { useInView } from "react-intersection-observer";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function Experience({ setActive }) {
   const pageHeight = window.innerHeight;
@@ -14,6 +17,11 @@ function Experience({ setActive }) {
   if (inView) {
     setActive("#experience");
   }
+  useEffect(() => {
+    return () => {
+      AOS.init({ duration: 500 });
+    };
+  }, []);
 
   return (
     <section id="experience" ref={ref}>
@@ -27,42 +35,42 @@ function Experience({ setActive }) {
           <div className="experience__content">
             <article className="experience__details">
               <BsPatchCheckFill className="experience__detail-icon" />
-              <div>
+              <div data-aos="fade-right" data-aos-duration="400">
                 <h4>HTML</h4>
                 <small className="text-light">Intermediate</small>
               </div>
             </article>
             <article className="experience__details">
               <BsPatchCheckFill className="experience__detail-icon" />
-              <div>
+              <div data-aos="fade-right" data-aos-duration="450">
                 <h4>CSS</h4>
                 <small className="text-light">Intermediate</small>
               </div>
             </article>
             <article className="experience__details">
               <BsPatchCheckFill className="experience__detail-icon" />
-              <div>
+              <div data-aos="fade-right" data-aos-duration="500">
                 <h4>JS</h4>
                 <small className="text-light">Intermediate</small>
               </div>
             </article>
             <article className="experience__details">
               <BsPatchCheckFill className="experience__detail-icon" />
-              <div>
+              <div data-aos="fade-right" data-aos-duration="550">
                 <h4>BOOTSTRAP</h4>
                 <small className="text-light">Basics</small>
               </div>
             </article>
             <article className="experience__details">
               <BsPatchCheckFill className="experience__detail-icon" />
-              <div>
+              <div data-aos="fade-right" data-aos-duration="600">
                 <h4>SASS</h4>
                 <small className="text-light">Basics</small>
               </div>
             </article>
             <article className="experience__details">
               <BsPatchCheckFill className="experience__detail-icon" />
-              <div>
+              <div data-aos="fade-right" data-aos-duration="650">
                 <h4>REACT</h4>
                 <small className="text-light">Intermediate</small>
               </div>
@@ -74,42 +82,42 @@ function Experience({ setActive }) {
           <div className="experience__content">
             <article className="experience__details">
               <BsPatchCheckFill className="experience__detail-icon" />
-              <div>
+              <div data-aos="fade-right" data-aos-duration="400">
                 <h4>Python</h4>
                 <small className="text-light">Intermediate</small>
               </div>
             </article>
             <article className="experience__details">
               <BsPatchCheckFill className="experience__detail-icon" />
-              <div>
+              <div data-aos="fade-right" data-aos-duration="450">
                 <h4>C/C++</h4>
                 <small className="text-light">Basics</small>
               </div>
             </article>
             <article className="experience__details">
               <BsPatchCheckFill className="experience__detail-icon" />
-              <div>
+              <div data-aos="fade-right" data-aos-duration="500">
                 <h4>JAVA</h4>
                 <small className="text-light">Basics</small>
               </div>
             </article>
             <article className="experience__details">
               <BsPatchCheckFill className="experience__detail-icon" />
-              <div>
+              <div data-aos="fade-right" data-aos-duration="550">
                 <h4>Supabase</h4>
                 <small className="text-light">Intermediate</small>
               </div>
             </article>
             <article className="experience__details">
               <BsPatchCheckFill className="experience__detail-icon" />
-              <div>
+              <div data-aos="fade-right" data-aos-duration="600">
                 <h4>SQL</h4>
                 <small className="text-light">Basics</small>
               </div>
             </article>
             <article className="experience__details">
               <BsPatchCheckFill className="experience__detail-icon" />
-              <div>
+              <div data-aos="fade-right" data-aos-duration="650">
                 <h4>PHP</h4>
                 <small className="text-light">Basics</small>
               </div>
