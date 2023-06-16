@@ -17,7 +17,7 @@ function Header({ setActive }) {
   }
   return (
     <header ref={ref}>
-      {console.log("about", inView)}
+      {/* {console.log("about", inView)} */}
       <div className="container header__container">
         <h5>Hello I'm</h5>
         <h1 className="amit">Amit Jahagirdar</h1>

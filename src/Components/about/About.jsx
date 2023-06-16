@@ -1,5 +1,5 @@
 import "./about.css";
-import ME from "../../assets/me-about.jpg";
+import ME from "../../assets/IMG5.jpg";
 import { FaAward } from "react-icons/fa";
 import { SiUdemy } from "react-icons/si";
 import { BiCodeAlt } from "react-icons/bi";
