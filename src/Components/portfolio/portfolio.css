@@ -23,13 +23,34 @@
 }
 
 .portfolio__item h3 {
-  margin: 1.2rem 0 2rem;
+  margin: 1.2rem 0 1.5rem;
 }
 
 .portfolio__item-cta {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 1rem;
+}
+
+.title-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0.5rem;
+}
+
+.logos-container {
+  display: flex;
+  gap: 0.3rem;
+}
+.logos {
+  width: 2.4rem;
+  margin: 1.2rem 0 1.5rem;
+}
+.desc {
+  font-size: 0.7rem;
+  margin: -0.5rem auto 1rem 1rem;
+  color: #d3d3d3;
 }
 
 /* =======Media queries (Medium Devices)======== */
@@ -46,6 +67,13 @@
     .portfolio__container {
       grid-template-columns: 1fr;
       gap: 1rem;
+    }
+    .logos-container {
+      display: flex;
+      gap: 0.5rem;
+    }
+    .logos {
+      width: 1.8rem;
     }
   }
 }
