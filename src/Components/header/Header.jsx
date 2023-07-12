@@ -1,5 +1,5 @@
 import "./header.css";
-import Me from "../../assets/me.png";
+import Me from "../../assets/imgs/me.png";
 import CTA from "./CTA";
 import HeaderSocial from "./HeaderSocials";
 import { useInView } from "react-intersection-observer";
