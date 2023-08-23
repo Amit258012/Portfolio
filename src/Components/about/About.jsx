@@ -22,7 +22,10 @@ function About({ setActive }) {
 	}
 
 	useEffect(() => {
-		AOS.init({ duration: 500 });
+		AOS.init({
+			duration: 500,
+			once: true,
+		});
 	}, []);
 	useEffect(() => {
 		if (AOS) {

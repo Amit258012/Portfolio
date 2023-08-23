@@ -52,7 +52,11 @@ function Portfolio({ setActive }) {
 									className="portfolio__item"
 									data-aos="zoom-in-down">
 									<div className="portfolio__item-image">
-										<img src={image} alt={title} />
+										<img
+											src={image}
+											alt={title}
+											className="portfolio__image"
+										/>
 									</div>
 									<div className="title-logo">
 										<h3>{title}</h3>

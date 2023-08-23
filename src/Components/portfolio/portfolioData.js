@@ -1,38 +1,39 @@
-import IMG1 from "../../assets/imgs/portfolio1.jpg";
-import IMG2 from "../../assets/imgs/portfolio2.jpg";
-import IMG3 from "../../assets/imgs/portfolio3.jpg";
-import IMG4 from "../../assets/imgs/portfolio4.jpg";
-import IMG5 from "../../assets/imgs/portfolio5.png";
-import IMG6 from "../../assets/imgs/portfolio6.jpg";
-import IMG7 from "../../assets/imgs/portfolio7.jpg";
-import IMG8 from "../../assets/imgs/portfolio8.jpg";
+import Omnifood from "../../assets/imgs/omnifood.png";
+import Forkify from "../../assets/imgs/forkify.png";
+import Mapty from "../../assets/imgs/mapty.png";
+import Optbest from "../../assets/imgs/optbest.png";
+import YouTube from "../../assets/imgs/YouTube.png";
+// import IMG6 from "../../assets/imgs/portfolio6.jpg";
+import Facts from "../../assets/imgs/today-fact.png";
+import RTKStore from "../../assets/imgs/rtk-store.png";
+import MovieXInfo from "../../assets/imgs/moviexinfo.png";
 
 import SUPABASE from "../../assets/imgs/supabase.png";
-import { REACT, CSS, HTML, JS, MUI } from "../../iconConfig";
+import { REACT, CSS, HTML, JS, MUI, REDUX, SASS } from "../../iconConfig";
 
 // data
 export const data = [
-	{
-		id: 1,
-		image: IMG6,
-		title: "Country data",
-		githubLink: "https://github.com/Amit258012/Country-Data",
-		liveDemo: "https://country-neighbour-data.netlify.app",
-		logos: [HTML, CSS, JS],
-		desc: "Simple Country app which displays the living country details using geolocation and more",
-	},
-	{
-		id: 2,
-		image: IMG5,
-		title: "Bank app",
-		githubLink: "https://github.com/Amit258012/Bankist-app",
-		liveDemo: "https://fend-bankist.netlify.app/",
-		logos: [HTML, CSS, JS],
-		desc: "Simple bank app with interactive functionality like Loan , Debit ,Withdraw , Login and more.",
-	},
+	// {
+	// 	id: 1,
+	// 	image: IMG6,
+	// 	title: "Country data",
+	// 	githubLink: "https://github.com/Amit258012/Country-Data",
+	// 	liveDemo: "https://country-neighbour-data.netlify.app",
+	// 	logos: [HTML, CSS, JS],
+	// 	desc: "Simple Country app which displays the living country details using geolocation and more",
+	// },
+	// {
+	// 	id: 2,
+	// 	image: IMG5,
+	// 	title: "Bank app",
+	// 	githubLink: "https://github.com/Amit258012/Bankist-app",
+	// 	liveDemo: "https://fend-bankist.netlify.app/",
+	// 	logos: [HTML, CSS, JS],
+	// 	desc: "Simple bank app with interactive functionality like Loan , Debit ,Withdraw , Login and more.",
+	// },
 	{
 		id: 3,
-		image: IMG3,
+		image: Omnifood,
 		title: "Omnifood",
 		githubLink: "https://github.com/Amit258012/UI-Restaurants-website",
 		liveDemo: "https://omnifood-rest-ui.netlify.app/",
@@ -41,7 +42,7 @@ export const data = [
 	},
 	{
 		id: 4,
-		image: IMG4,
+		image: Mapty,
 		title: "Workout Map",
 		githubLink: "https://github.com/Amit258012/MAPTY",
 		liveDemo: "https://map-wkout.netlify.app/",
@@ -50,7 +51,7 @@ export const data = [
 	},
 	{
 		id: 5,
-		image: IMG2,
+		image: Forkify,
 		title: "Forkify",
 		githubLink: "https://github.com/Amit258012/Recip-app",
 		liveDemo: "https://forkify-v2.netlify.app/",
@@ -59,7 +60,7 @@ export const data = [
 	},
 	{
 		id: 6,
-		image: IMG1,
+		image: Optbest,
 		title: "Optbest",
 		githubLink: "https://github.com/Amit258012/Selective-subject",
 		liveDemo: "https://optbest.netlify.app/",
@@ -69,7 +70,7 @@ export const data = [
 
 	{
 		id: 7,
-		image: IMG8,
+		image: YouTube,
 		title: "YouTube Clone",
 		githubLink: "https://github.com/Amit258012/yt_clone",
 		liveDemo: "https://amitstube.netlify.app/",
@@ -78,11 +79,29 @@ export const data = [
 	},
 	{
 		id: 8,
-		image: IMG7,
+		image: Facts,
 		title: "Today's Fact",
 		githubLink: "https://github.com/Amit258012/supabase-project",
 		liveDemo: "https://amitfacts.netlify.app/",
 		logos: [REACT, CSS, SUPABASE],
 		desc: "Today's fact is the web app that is used to share and react to facts in real-time and more.",
+	},
+	{
+		id: 9,
+		image: RTKStore,
+		title: "RTK Store",
+		githubLink: "https://github.com/Amit258012/Redux-practice/",
+		liveDemo: "https://rtkstore.netlify.app/",
+		logos: [REACT, CSS, REDUX],
+		desc: "This is a basic implementation of a shopping cart using Redux Toolkit.",
+	},
+	{
+		id: 10,
+		image: MovieXInfo,
+		title: "Movie Info",
+		githubLink: "https://github.com/Amit258012/MovieInfo",
+		liveDemo: "https://moviexinfo.netlify.app/",
+		logos: [REACT, SASS, REDUX],
+		desc: "Users can browse through a wide range of movies, view details, and get information about their favorite films.",
 	},
 ];

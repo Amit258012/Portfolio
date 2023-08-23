@@ -5,3 +5,5 @@ export const HTML = "https://img.icons8.com/color/48/html-5--v1.png";
 // export const SUPABASE = "./assets/supabase.png";
 export const JS = "https://img.icons8.com/fluency/48/javascript.png";
 export const MUI = "https://img.icons8.com/color/48/material-ui.png";
+export const REDUX = "https://img.icons8.com/color/48/redux.png";
+export const SASS = "https://img.icons8.com/color/48/sass.png";
